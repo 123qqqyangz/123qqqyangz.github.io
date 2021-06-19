@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guaojiyin.online</id>
     <title>FYz的博客</title>
-    <updated>2021-06-18T12:58:58.235Z</updated>
+    <updated>2021-06-19T11:56:00.100Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guaojiyin.online"/>
     <link rel="self" href="https://guaojiyin.online/atom.xml"/>
-    <subtitle>分享也是一种学习</subtitle>
+    <subtitle>博观而约取，厚积而勃发。</subtitle>
     <logo>https://guaojiyin.online/images/avatar.png</logo>
     <icon>https://guaojiyin.online/favicon.ico</icon>
     <rights>All rights reserved 2021, FYz的博客</rights>
