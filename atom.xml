@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://guaojiyin.online</id>
+    <id>https://fyzxyz.top</id>
     <title>FYz的博客</title>
-    <updated>2021-06-19T11:59:25.631Z</updated>
+    <updated>2021-06-21T12:08:48.324Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://guaojiyin.online"/>
-    <link rel="self" href="https://guaojiyin.online/atom.xml"/>
+    <link rel="alternate" href="https://fyzxyz.top"/>
+    <link rel="self" href="https://fyzxyz.top/atom.xml"/>
     <subtitle>博观而约取，厚积而勃发。</subtitle>
-    <logo>https://guaojiyin.online/images/avatar.png</logo>
-    <icon>https://guaojiyin.online/favicon.ico</icon>
+    <logo>https://fyzxyz.top/images/avatar.png</logo>
+    <icon>https://fyzxyz.top/favicon.ico</icon>
     <rights>All rights reserved 2021, FYz的博客</rights>
     <entry>
         <title type="html"><![CDATA[数据集验证]]></title>
-        <id>https://guaojiyin.online/post/shu-ju-ji-yan-zheng/</id>
-        <link href="https://guaojiyin.online/post/shu-ju-ji-yan-zheng/">
+        <id>https://fyzxyz.top/post/shu-ju-ji-yan-zheng/</id>
+        <link href="https://fyzxyz.top/post/shu-ju-ji-yan-zheng/">
         </link>
         <updated>2021-06-18T10:55:00.000Z</updated>
         <content type="html"><![CDATA[<p>数据集分配：训练集 验证集 测试集 比例：6：2：2<br>
