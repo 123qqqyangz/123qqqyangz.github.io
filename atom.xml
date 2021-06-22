@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fyzxyz.top</id>
     <title>FYz的博客</title>
-    <updated>2021-06-22T02:39:48.023Z</updated>
+    <updated>2021-06-22T02:49:00.513Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fyzxyz.top"/>
     <link rel="self" href="https://fyzxyz.top/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://fyzxyz.top/images/avatar.png</logo>
     <icon>https://fyzxyz.top/favicon.ico</icon>
     <rights>All rights reserved 2021, FYz的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[matlab 三维数据定向旋转]]></title>
+        <id>https://fyzxyz.top/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/</id>
+        <link href="https://fyzxyz.top/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/">
+        </link>
+        <updated>2021-06-22T02:47:29.000Z</updated>
+        <content type="html"><![CDATA[<p>1111</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vue.JS 学习1]]></title>
         <id>https://fyzxyz.top/post/vuejs-xue-xi-1/</id>
@@ -23,7 +32,7 @@
         <link href="https://fyzxyz.top/post/shu-ju-ji-yan-zheng/">
         </link>
         <updated>2021-06-18T10:55:00.000Z</updated>
-        <content type="html"><![CDATA[<p>数据集分配：训练集 验证集 测试集 比例：6：2：2<br>
+        <content type="html"><![CDATA[<p>😁数据集分配：训练集 验证集 测试集 比例：6：2：2<br>
 或者：7：1：2</p>
 ]]></content>
     </entry>
