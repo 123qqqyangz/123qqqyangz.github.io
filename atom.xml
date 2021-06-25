@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://fyzxyz.top</id>
     <title>FYz的博客</title>
-    <updated>2021-06-22T12:55:25.488Z</updated>
+    <updated>2021-06-25T08:40:10.173Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://fyzxyz.top"/>
+    <link rel="self" href="https://fyzxyz.top/atom.xml"/>
     <subtitle>放弃非常容易，但坚持一定很美！</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://fyzxyz.top/images/avatar.png</logo>
+    <icon>https://fyzxyz.top/favicon.ico</icon>
     <rights>All rights reserved 2021, FYz的博客</rights>
     <entry>
         <title type="html"><![CDATA[matlab 三维数据定向旋转]]></title>
-        <id>http://localhost:4000/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/</id>
-        <link href="http://localhost:4000/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/">
+        <id>https://fyzxyz.top/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/</id>
+        <link href="https://fyzxyz.top/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/">
         </link>
         <updated>2021-06-22T02:47:29.000Z</updated>
         <content type="html"><![CDATA[<p>1111</p>
@@ -21,8 +21,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Vue.JS 学习1551212]]></title>
-        <id>http://localhost:4000/post/vuejs-xue-xi-1/</id>
-        <link href="http://localhost:4000/post/vuejs-xue-xi-1/">
+        <id>https://fyzxyz.top/post/vuejs-xue-xi-1/</id>
+        <link href="https://fyzxyz.top/post/vuejs-xue-xi-1/">
         </link>
         <updated>2021-06-21T08:54:06.000Z</updated>
         <content type="html"><![CDATA[<p>1213131323</p>
@@ -30,8 +30,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[数据集验证]]></title>
-        <id>http://localhost:4000/post/shu-ju-ji-yan-zheng/</id>
-        <link href="http://localhost:4000/post/shu-ju-ji-yan-zheng/">
+        <id>https://fyzxyz.top/post/shu-ju-ji-yan-zheng/</id>
+        <link href="https://fyzxyz.top/post/shu-ju-ji-yan-zheng/">
         </link>
         <updated>2021-06-18T10:55:00.000Z</updated>
         <content type="html"><![CDATA[<p>😁数据集分配：训练集 验证集 测试集 比例：6：2：2<br>
