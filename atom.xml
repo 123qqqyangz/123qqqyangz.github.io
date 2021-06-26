@@ -1,37 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://fyzxyz.top</id>
+    <id>http://localhost:4000</id>
     <title>FYz的博客</title>
-    <updated>2021-06-25T08:40:10.173Z</updated>
+    <updated>2021-06-26T07:54:58.713Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://fyzxyz.top"/>
-    <link rel="self" href="https://fyzxyz.top/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>放弃非常容易，但坚持一定很美！</subtitle>
-    <logo>https://fyzxyz.top/images/avatar.png</logo>
-    <icon>https://fyzxyz.top/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, FYz的博客</rights>
     <entry>
+        <title type="html"><![CDATA[SGD ,  Momentum ,  AdaGrad， Adam 梯度下降法]]></title>
+        <id>http://localhost:4000/post/sgd-momentum-adagrad-adam-ti-du-xia-jiang-fa/</id>
+        <link href="http://localhost:4000/post/sgd-momentum-adagrad-adam-ti-du-xia-jiang-fa/">
+        </link>
+        <updated>2021-06-25T09:13:15.000Z</updated>
+        <content type="html"><![CDATA[<p>1.梯度下降法<br>
+（1）随机梯度下降法SGD 每次只选择一个样本来估计当前梯度，即</p>
+<p>（2） SGD每次只使用一个样本，信息量有限，梯度估计常常出现偏差，造成目标函数曲线收敛不稳定。为了避免这种情况，可以采用批量梯度下降法BGD，即</p>
+<p>（3）但是BGD每次采用所有数据的梯度，计算量大，这种的方法是每次选择部分数据，即MiniBatch<br>
+2.Momentum 方法<br>
+（1）Momentum基于物理学中动量的概念，当前梯度好比当前时刻产生的加速度，前一次步伐好比前一时刻的速度，当前步伐好比当前时刻的速度。显然，当前时刻的速度Vt直接依赖Vt-1和gt加速度<br>
+（2）参数更新公式</p>
+<p>衰减系数Y扮演阻力的作用<br>
+3.AdaGrad 方法<br>
+（1）上述动量方法中的惯性的获得是基于历史信息的， 除了惯性，还希望梯度能够获得对周围环境的感知。所谓对环境的感知是指：在参数空间中，根据不同参数的一些经验性判断，自适应地确定参数的学习速率，不同参数的更新步幅是不同的。<br>
+也就是说，我们希望：更新频率低的参数可以拥有较大的更新步幅，而更新频率高的参数的步幅可以减小。AdaGrad方法采用历史梯度平方和来衡量不同参数的梯度的稀疏性，取值越小表明越稀疏。<br>
+4.Adam方法<br>
+（1）Adam方法 将惯性保持和环境感知两点集于一身。<br>
+*<br>
+一方面，Adam记录梯度的一阶矩，即过往梯度和当前梯度的平均，体现了惯性保持；<br>
+*<br>
+另一方面，Adam还记录了梯度的二阶矩，即过往梯度平方和当前梯度平方的平均，这体现了环境感知的能力。</p>
+<p>（2） 一阶矩和二阶矩采用类似于滑动窗口内求平均的思想进行融合，即当前梯度和近一段时间内的梯度的平均值，时间久远的梯度对当前平均值的贡献呈指数衰减。<br>
+（3） Adam方法还考虑了在零初始值情况下的偏置矫正。具体来说，Adam的更新公式为<br>
+5.AdamW方法<br>
+在传统的SGD中，如果我们希望增加模型的泛化能力，通常会引入正则化项（L2和L1正则化）。引入L2正则化项之后，在计算梯度的时候会加上对正则化项求梯度的结果，所以如果参数本身比较大那么对应的梯度也会比较大。而在Adam的计算中，被减数会除以梯度平方的累积，使得减去项偏小，这导致了Adam无法对权重过大的项做出惩罚。而权重衰减对所有权重采用相同的系数进行更新，越大的权重显然惩罚就越大，所以很多时候Adam的效果反而不如直接使用SGD with Momentum好。<br>
+于是adamW中正确引入了Weight Decay的方式，首先设  表示  时刻的梯度，  表示  时刻所有参数的权重值，那么有：</p>
+<p>作者：莫冉<br>
+链接：https://zhuanlan.zhihu.com/p/113112032<br>
+来源：知乎<br>
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关键点检查公式：针对每一类的来计算精度]]></title>
+        <id>http://localhost:4000/post/guan-jian-dian-jian-cha-gong-shi-zhen-dui-mei-yi-lei-de-lai-ji-suan-jing-du/</id>
+        <link href="http://localhost:4000/post/guan-jian-dian-jian-cha-gong-shi-zhen-dui-mei-yi-lei-de-lai-ji-suan-jing-du/">
+        </link>
+        <updated>2021-06-25T09:11:01.000Z</updated>
+        <content type="html"><![CDATA[<p>AP &amp; mAPAP：PR 曲线下面积（下面会说明） mAP：mean Average Precision, 即各类别 AP 的平均值TP、FP、FN、TN<br>
+*<br>
+True Positive (TP): IoU&gt; ( 一般取 0.5 ) 的检测框数量（同一 Ground Truth 只计算一次）<br>
+*<br>
+False Positive (FP): IoU&lt;= 的检测框数量，或者是检测到同一个 GT 的多余检测框的数量<br>
+*<br>
+False Negative (FN): 没有检测到的 GT 的数量<br>
+*<br>
+True Negative (TN): 在 mAP 评价指标中不会使用到</p>
+<p>查准率、查全率<br>
+*<br>
+查准率（Precision）: TP/(TP + FP)<br>
+*<br>
+查全率（Recall）: TP/(TP + FN)</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[matlab 三维数据定向旋转]]></title>
-        <id>https://fyzxyz.top/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/</id>
-        <link href="https://fyzxyz.top/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/">
+        <id>http://localhost:4000/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/</id>
+        <link href="http://localhost:4000/post/matlab-san-wei-shu-ju-ding-xiang-xuan-zhuan/">
         </link>
         <updated>2021-06-22T02:47:29.000Z</updated>
         <content type="html"><![CDATA[<p>1111</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Vue.JS 学习1551212]]></title>
-        <id>https://fyzxyz.top/post/vuejs-xue-xi-1/</id>
-        <link href="https://fyzxyz.top/post/vuejs-xue-xi-1/">
+        <title type="html"><![CDATA[Vue]]></title>
+        <id>http://localhost:4000/post/vuejs-xue-xi-1/</id>
+        <link href="http://localhost:4000/post/vuejs-xue-xi-1/">
         </link>
         <updated>2021-06-21T08:54:06.000Z</updated>
-        <content type="html"><![CDATA[<p>1213131323</p>
+        <content type="html"><![CDATA[<p>一、Vue-cli项目学习</p>
+<ol>
+<li>创建项目 vue init webpack myvue-study</li>
+<li>cd myvue-study</li>
+<li>npm install</li>
+<li>npm run dev<br>
+进入idea 打开项目进行 router 路由配置</li>
+</ol>
+<p>路由安装: npm install vue-router --save-dev</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[数据集验证]]></title>
-        <id>https://fyzxyz.top/post/shu-ju-ji-yan-zheng/</id>
-        <link href="https://fyzxyz.top/post/shu-ju-ji-yan-zheng/">
+        <id>http://localhost:4000/post/shu-ju-ji-yan-zheng/</id>
+        <link href="http://localhost:4000/post/shu-ju-ji-yan-zheng/">
         </link>
         <updated>2021-06-18T10:55:00.000Z</updated>
         <content type="html"><![CDATA[<p>😁数据集分配：训练集 验证集 测试集 比例：6：2：2<br>

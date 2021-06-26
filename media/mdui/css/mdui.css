@@ -10711,6 +10711,7 @@ select.mdui-select[multiple] option:last-child {
 body.mdui-loaded {
   -webkit-transition: padding .3s cubic-bezier(0, 0, .2, 1);
           transition: padding .3s cubic-bezier(0, 0, .2, 1);
+	background-attachment: fixed;
 }
 body.mdui-loaded .mdui-drawer {
   -webkit-transition: all .3s cubic-bezier(0, 0, .2, 1);

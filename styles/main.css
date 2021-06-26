@@ -1,5 +1,6 @@
 body {
-  background: #edeff0 url(../media/img/bg_01.jpg);
+  background: #edeff0 url(../media/img/centerbg.jpg);
+  background-attachment: fixed;
 }
 a {
   text-decoration: none;
