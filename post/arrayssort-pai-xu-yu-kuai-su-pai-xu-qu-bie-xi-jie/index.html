@@ -50,37 +50,15 @@
         <main id="main" class="site-main" role="main">
             <article id="post-1270" class="post-1270 post type-post status-publish format-standard hentry category-90 category-129 tag-149">
                 <header class="entry-header">
-                    <h1 class="entry-title">SGD ,  Momentum ,  AdaGrad， Adam 梯度下降法</h1>
-                    <p class="entry-census">发布于 2021-06-25</p>
+                    <h1 class="entry-title">Arrays.sort 排序 与 快速排序区别细节</h1>
+                    <p class="entry-census">发布于 2022-06-07</p>
                     <hr>
                 </header>
                 <div class="neko">
-                    <p>1.梯度下降法<br>
-（1）随机梯度下降法SGD 每次只选择一个样本来估计当前梯度，即</p>
-<p>（2） SGD每次只使用一个样本，信息量有限，梯度估计常常出现偏差，造成目标函数曲线收敛不稳定。为了避免这种情况，可以采用批量梯度下降法BGD，即</p>
-<p>（3）但是BGD每次采用所有数据的梯度，计算量大，这种的方法是每次选择部分数据，即MiniBatch<br>
-2.Momentum 方法<br>
-（1）Momentum基于物理学中动量的概念，当前梯度好比当前时刻产生的加速度，前一次步伐好比前一时刻的速度，当前步伐好比当前时刻的速度。显然，当前时刻的速度Vt直接依赖Vt-1和gt加速度<br>
-（2）参数更新公式</p>
-<p>衰减系数Y扮演阻力的作用<br>
-3.AdaGrad 方法<br>
-（1）上述动量方法中的惯性的获得是基于历史信息的， 除了惯性，还希望梯度能够获得对周围环境的感知。所谓对环境的感知是指：在参数空间中，根据不同参数的一些经验性判断，自适应地确定参数的学习速率，不同参数的更新步幅是不同的。<br>
-也就是说，我们希望：更新频率低的参数可以拥有较大的更新步幅，而更新频率高的参数的步幅可以减小。AdaGrad方法采用历史梯度平方和来衡量不同参数的梯度的稀疏性，取值越小表明越稀疏。<br>
-4.Adam方法<br>
-（1）Adam方法 将惯性保持和环境感知两点集于一身。<br>
-*<br>
-一方面，Adam记录梯度的一阶矩，即过往梯度和当前梯度的平均，体现了惯性保持；<br>
-*<br>
-另一方面，Adam还记录了梯度的二阶矩，即过往梯度平方和当前梯度平方的平均，这体现了环境感知的能力。</p>
-<p>（2） 一阶矩和二阶矩采用类似于滑动窗口内求平均的思想进行融合，即当前梯度和近一段时间内的梯度的平均值，时间久远的梯度对当前平均值的贡献呈指数衰减。<br>
-（3） Adam方法还考虑了在零初始值情况下的偏置矫正。具体来说，Adam的更新公式为<br>
-5.AdamW方法<br>
-在传统的SGD中，如果我们希望增加模型的泛化能力，通常会引入正则化项（L2和L1正则化）。引入L2正则化项之后，在计算梯度的时候会加上对正则化项求梯度的结果，所以如果参数本身比较大那么对应的梯度也会比较大。而在Adam的计算中，被减数会除以梯度平方的累积，使得减去项偏小，这导致了Adam无法对权重过大的项做出惩罚。而权重衰减对所有权重采用相同的系数进行更新，越大的权重显然惩罚就越大，所以很多时候Adam的效果反而不如直接使用SGD with Momentum好。<br>
-于是adamW中正确引入了Weight Decay的方式，首先设  表示  时刻的梯度，  表示  时刻所有参数的权重值，那么有：</p>
-<p>作者：莫冉<br>
-链接：https://zhuanlan.zhihu.com/p/113112032<br>
-来源：知乎<br>
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处</p>
+                    <p>Arrays.sort 排序 分为两种  归并排序（改进） 和 快速排序（改进）</p>
+<p>首先判断数组大小（通常 与 阈值  QUICKSORT_THRESHOLD 比较 ），如果数组很小，  则采用改进后的快速排序完成排序<br>
+如果数组较大，再进行判断数组的无序程度 如果数组几乎无序（ 通过跟阈值MAX_RUN_COUNT比较）， 则同样调用改进的快速排序算法排序，<br>
+如果数组基本有序，则采用归并排序算法对数组进行排序</p>
 
                 </div>
             </article>
@@ -90,20 +68,14 @@
         <div class="mdui-container">
             <div class="mdui-row">
                 
-                <a href="https://fyzxyz.top/post/arrayssort-pai-xu-yu-kuai-su-pai-xu-qu-bie-xi-jie/" class="mdui-ripple mdui-color-theme mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
-                    <div class="doc-footer-nav-text">
-                        <i class="mdui-icon material-icons">arrow_back</i>
-                        <span class="doc-footer-nav-direction mdui-hidden-xs-down">上一篇文章</span>
-                        <div class="doc-footer-nav-chapter mdui-hidden-xs-down">Arrays.sort 排序 与 快速排序区别细节</div>
-                    </div>
-                </a>
+                <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
                 
                 
-                <a href="https://fyzxyz.top/post/guan-jian-dian-jian-cha-gong-shi-zhen-dui-mei-yi-lei-de-lai-ji-suan-jing-du/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+                <a href="https://fyzxyz.top/post/sgd-momentum-adagrad-adam-ti-du-xia-jiang-fa/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
                     <div class="doc-footer-nav-text">
                         <i class="mdui-icon material-icons">arrow_forward</i>
                         <span class="doc-footer-nav-direction">下一篇文章</span>
-                        <div class="doc-footer-nav-chapter">关键点检查公式：针对每一类的来计算精度</div>
+                        <div class="doc-footer-nav-chapter">SGD ,  Momentum ,  AdaGrad， Adam 梯度下降法</div>
                     </div>
                 </a>
                 
