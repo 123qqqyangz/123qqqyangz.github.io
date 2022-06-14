@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fyzxyz.top</id>
     <title>FYz的博客</title>
-    <updated>2022-06-07T11:22:45.224Z</updated>
+    <updated>2022-06-14T11:35:16.256Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fyzxyz.top"/>
     <link rel="self" href="https://fyzxyz.top/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://fyzxyz.top/images/avatar.png</logo>
     <icon>https://fyzxyz.top/favicon.ico</icon>
     <rights>All rights reserved 2022, FYz的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[多线程中 synchronized 锁升级的原理]]></title>
+        <id>https://fyzxyz.top/post/duo-xian-cheng-zhong-synchronized-suo-sheng-ji-de-yuan-li/</id>
+        <link href="https://fyzxyz.top/post/duo-xian-cheng-zhong-synchronized-suo-sheng-ji-de-yuan-li/">
+        </link>
+        <updated>2022-06-14T11:28:49.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="在锁对象里面有threadid字段第一次访问threadid为空jvm让其成为偏向锁然后把threadid-设置为线程的id第二次访问比较threadid与线程id是否一致不一致则升级为轻量级锁-轻量级锁经过自旋一段时间如果还有没正常获取到使用对象则把轻量级锁升级为重量级锁">在锁对象里面有threadid字段，第一次访问threadid为空，JVM让其成为偏向锁，然后把threadid 设置为线程的id；第二次访问比较threadid与线程id,是否一致，不一致则升级为轻量级锁。轻量级锁经过自旋一段时间，如果还有没正常获取到使用对象，则把轻量级锁升级为重量级锁。</h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Arrays.sort 排序 与 快速排序区别细节]]></title>
         <id>https://fyzxyz.top/post/arrayssort-pai-xu-yu-kuai-su-pai-xu-qu-bie-xi-jie/</id>
